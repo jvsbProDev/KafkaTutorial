@@ -206,11 +206,11 @@ Check the `Hello World!` message in the `consumer` function
 <img src="./img/kafka_42.png"></br>
 
 #### Delete Topic
-> ./kafka-topics.sh —delete --bootstrap-server localhost:9092 --topic test
+> ./kafka-topics.sh --delete --bootstrap-server localhost:9092 --topic test
 
 #### Stop Kafka and Zookeeper server
-> ./kafka-server-stop.sh</br>
-> ./zookeeper-server-stop.sh
+> ./kafka-server-stop.sh /opt/kafka/config/server.properties</br>
+> ./zookeeper-server-stop.sh /opt/kafka/config/zookeeper.properties
 
 <img src="./img/kafka_43.png"></br>
 
