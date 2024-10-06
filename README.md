@@ -74,7 +74,7 @@ Check the `Hello World!` message in the `consumer` function
 <img src="./img/kafka_42.png"></br>
 
 #### Delete Topic
-> ./kafka-topics.sh —delete --bootstrap-server localhost:9092 --topic test
+> ./kafka-topics.sh --delete --bootstrap-server localhost:9092 --topic test
 
 #### Stop Kafka and Zookeeper server
 > ./kafka-server-stop.sh</br>
