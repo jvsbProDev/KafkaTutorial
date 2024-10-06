@@ -153,9 +153,13 @@ Go to https://kafka.apache.org/downloads
 
 <img src="./img/kafka_32.png"></br>
 
+In the `C:\kafka\config` directory, you will find all the configuration of the **server** and **zookeper** with the extension of `.properties` in its' file name
+
 > ~ % **cd /opt/kafka/config**
 
 <img src="./img/kafka_33.png"></br>
+
+In `server.properties`, provide the path where **kafka** folder is extracted in `log.dirs`
 
 > config % **open server.properties**
 
@@ -165,19 +169,23 @@ Go to https://kafka.apache.org/downloads
 
 <img src="./img/kafka_35.png"></br>
 
+In `zookeeper.properties`, provide the path for the data directory in `dataDir`
+
 > config % **open zookeeper.properties**
 
 <img src="./img/kafka_36.png"></br>
 
-> ~ % **cd /opt/kafka/bin**
+Go to `kafka` directory
+
+> ~ % **cd /opt/kafka**
 
 #### Start Zookeeper and Kafka server
 
-> ./zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties
+> ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
 
 <img src="./img/kafka_37.png"></br>
 
-> ./kafka-server-start.sh /opt/kafka/config/server.properties
+> ./bin/kafka-server-start.sh ./config/server.properties
 
 <img src="./img/kafka_38.png"></br>
 
@@ -186,6 +194,10 @@ Go to https://kafka.apache.org/downloads
 > ./kafka-topics.sh --create --bootstrap-server localhost:9092 --topic test
 
 <img src="./img/kafka_39.png"></br>
+
+Go to `bin` directory
+
+> ~ % **cd /opt/kafka/bin**
 
 #### Consumer
 
