@@ -33,7 +33,7 @@ Put in `c:/kafka/kafka-logs` as the `log.dirs` path
 
 <img src="./img/kafka_08.png"></br>
 
-Uncomment `listeners` and put `localhost` next to port (if will use only on local Desktop)
+Uncomment `listeners` and put `localhost` next to port (if will use only on local Desktop, comment-out if causing issues with other scripts)
 
 <img src="./img/kafka_09.png"></br>
 
@@ -165,7 +165,7 @@ In `server.properties`, provide the path where **kafka** folder is extracted in 
 
 <img src="./img/kafka_34.png"></br>
 
-#### Uncomment `listeners` and put `localhost` next to port (if will use only on local Desktop)
+#### Uncomment `listeners` and put `localhost` next to port (if will use only on local Desktop, comment-out if causing issues with other scripts)
 
 <img src="./img/kafka_35.png"></br>
 
@@ -231,6 +231,10 @@ Delete the `kafka-logs` and `zookeeper-data` folders from `opt/kafka` directory
 <img src="./img/kafka_44.png"></br>
 
 <h1 align="center">Kafka Tutorial - Python</h1></br>
+
+Uncomment `listeners` and put `localhost` next to port (if will use only on local Desktop, comment-out if causing issues with other scripts)
+
+<img src="./img/kafka_09.png"></br>
 
 <img src="./img/kafka_45.png"></br>
 
